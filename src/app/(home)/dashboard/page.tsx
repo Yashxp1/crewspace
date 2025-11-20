@@ -138,7 +138,7 @@ const Page = () => {
                 className="w-full"
                 onClick={handleCreateWorkspace}
                 disabled={isPending || !workspaceName.trim()}
-                size="lg"
+                size="sm"
               >
                 {isPending ? (
                   <>
@@ -173,7 +173,7 @@ const Page = () => {
                 className="w-full"
                 onClick={handleJoinWorkspace}
                 disabled={isJoining || !workspaceID.trim()}
-                size="lg"
+                size="sm"
               >
                 {isJoining ? (
                   <>
