@@ -1,12 +1,9 @@
-import React from 'react';
-import Tasks from './Tasks';
+import React from 'react'
 
-const Page = () => {
+const page = () => {
   return (
-    <div>
-      <Tasks />
-    </div>
-  );
-};
+    <div>page</div>
+  )
+}
 
-export default Page;
+export default page

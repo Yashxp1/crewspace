@@ -14,7 +14,7 @@ const Footer = () => {
           </h3>
           <hr />
           <div className='text-[12px] text-zinc-600 py-10 flex justify-between'>
-            <p>© 2025 crewspace. All rights reserved.</p>
+            <p>© 2025 Kelvin. All rights reserved.</p>
             <div className='flex justify-between gap-4'>
               <p>Terms of service</p>
               <p>Privacy Policy</p>

@@ -1,8 +1,6 @@
 'use client';
 
-
 import { BriefcaseBusiness, Plus } from 'lucide-react';
-import Topbar from '@/components/dashboard/Topbar';
 import { Spinner } from '@/components/ui/spinner';
 import {
   Popover,
@@ -11,19 +9,20 @@ import {
 } from '@/components/ui/popover';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import TaskModal from './TaskModal';
 import {
   useGetAllWorkspaces,
   useGetOneWorkspaces,
 } from '@/api-hooks/useWorkspaces';
 import { useParams } from 'next/navigation';
 import { toast } from 'sonner';
+import TaskModal from './TaskModal';
+import { ModeToggle } from '@/components/darkmode/ModeToggle';
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   const { data, isLoading } = useGetAllWorkspaces();
   const params = useParams();
   const wsId = params.id as string;
@@ -35,11 +34,8 @@ export default function RootLayout({
   };
 
   return (
-    <main className="flex min-h-screen relative transition-all duration-300 bg-background">
-      <div className="sticky top-0 z-40 w-full">
-        <Topbar />
-        <div className="px-4 md:px-8 py-4">{children}</div>
-      </div>
+    <div>
+      <main>{children}</main>
 
       <Popover>
         <PopoverTrigger asChild>
@@ -66,7 +62,11 @@ export default function RootLayout({
                     Workspace actions
                   </h2>
                 </div>
-                <div>
+                <div className="flex gap-1 justify-center items-center">
+                  <div>
+                    <ModeToggle />
+                  </div>
+
                   <Button
                     onClick={handleInvite}
                     variant="ghost"
@@ -135,6 +135,6 @@ export default function RootLayout({
           )}
         </PopoverContent>
       </Popover>
-    </main>
+    </div>
   );
 }

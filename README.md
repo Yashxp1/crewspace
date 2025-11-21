@@ -1,12 +1,12 @@
-# 🚀 CrewSpace
+# 🚀 Kelvin
 
-CrewSpace is a **modern project management tool** built to help teams collaborate, organise their work, and track tasks efficiently, all in one place.
+Kelvin is a **modern project management tool** built to help teams collaborate, organise their work, and track tasks efficiently, all in one place.
 
 ---
 
 ## 🧠 Overview
 
-CrewSpace allows users to **create workspaces**, **invite members**, assign them roles, and manage **tasks** with priorities, statuses, and target deadlines.  
+Kelvin allows users to **create workspaces**, **invite members**, assign them roles, and manage **tasks** with priorities, statuses, and target deadlines.  
 The goal of this project is to create a simple yet powerful platform for seamless teamwork and productivity.
 
 ---
@@ -58,8 +58,8 @@ The goal of this project is to create a simple yet powerful platform for seamles
 
 ```bash
 # 1️⃣ Clone the Repository
-git clone https://github.com/Yashxp1/crewspace.git
-cd crewspace
+git clone https://github.com/Yashxp1/Kelvin.git
+cd Kelvin
 
 # 2️⃣ Install Dependencies
 npm install
