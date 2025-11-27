@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/sonner';
 
 export const metadata: Metadata = {
-  title: 'Kelvin.',
+  title: 'crewspace.',
   description: 'Project management made easy',
   icons: { icon: '/logo.svg' },
 };

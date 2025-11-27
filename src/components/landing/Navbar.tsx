@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         <div className="flex gap-1 items-center">
           <Logo />
-          <h1 className="font-semibold text-lg">Kelvin.</h1>
+          <h1 className="font-semibold text-lg">crewspace.</h1>
         </div>
         <div className="hidden md:flex justify-evenly gap-8 items-center">
           <p className="cursor-default hover:bg-zinc-100 transition-all duration-200 px-2 py-0.5 rounded-full text-sm">
